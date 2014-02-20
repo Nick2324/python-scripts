@@ -9,7 +9,7 @@ import matplotlib.pyplot as plot
 import main
 
 if __name__ == '__main__':
-    g = net.read_pajek('/media/Archivos/russians.net')
+    g = net.read_pajek('russians.net')
     g = main.podar_red_hasta(g, 1000)
     cs = main.sorted_map(net.closeness_centrality(g))
     print cs[:10]
